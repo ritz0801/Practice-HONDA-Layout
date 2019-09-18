@@ -1,0 +1,20 @@
+.header {
+    .navbar {
+        background-color: $color-blue-1;
+
+        .navbar-brand {
+            img {
+                width: 67px;
+            }
+        }
+
+        .nav-item {
+            border-right: 1px solid $color-white-1;
+            padding: $pd-1 $pd-1;
+
+            .nav-link {
+                @include text($color-white-1, $fs-2 - 5, $fw-bold-0);
+            }
+        }
+    }
+}
