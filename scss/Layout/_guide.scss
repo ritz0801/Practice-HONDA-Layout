@@ -1,0 +1,68 @@
+.guide {
+    margin-top: $mg-4;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .guide_left {
+        position: relative;
+        margin-right: $mg-2;
+        button {
+            position: absolute;
+            left: 50%;
+            top: 80%;
+            transform: translateX(-50%);
+            background-color: $color-blue-3;
+            @include text($color-white-1, $fs-1 + 5, $fw-bold);
+            border: 2px solid $color-blue-3;
+            border-radius: 30px;
+            transition: all 0.5s;
+        }
+        &:hover {
+            button {
+                background-color: transparent;
+                color: $color-blue-3;
+            }
+        }
+    }
+    .guide_right {
+        position: relative;
+        margin-left: $mg-2;
+        img {
+            width: 833px;
+        }
+        div {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 45%;
+            p {
+                @include text($color-white-1, $fs-3, $fw-bold);
+                margin-bottom: $mg-0;
+            }
+            span {
+                display: block;
+                width: 100%;
+                @include text($color-white-1, $fs-1 + 2, $fw-normal);
+            }
+            button {
+                margin-top: $mg-3 + 10;
+                position: absolute;
+                left: 50%;
+                top: 80%;
+                transform: translateX(-50%);
+                background-color: $color-blue-3;
+                @include text($color-white-1, $fs-1 + 5, $fw-bold);
+                border: 2px solid $color-blue-3;
+                border-radius: 30px;
+                transition: all 0.5s;
+            }
+        }
+        &:hover {
+            button {
+                background-color: transparent;
+                color: $color-blue-3;
+            }
+        }
+    }
+}
