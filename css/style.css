@@ -1,3 +1,6 @@
+body {
+  background-color: #f5f5f5; }
+
 .header .navbar {
   background-color: #007cc0; }
   .header .navbar .navbar-brand img {
@@ -135,5 +138,97 @@
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23007cc0' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E"); }
+  .introduce .introduce_carousel .carousel-item {
+    position: relative; }
+    .introduce .introduce_carousel .carousel-item .carousel-item_content {
+      position: absolute;
+      z-index: 999;
+      left: 5%;
+      top: 10%; }
+      .introduce .introduce_carousel .carousel-item .carousel-item_content p {
+        color: #f2f8fc;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 70px; }
+      .introduce .introduce_carousel .carousel-item .carousel-item_content svg {
+        width: 100%;
+        display: block;
+        margin-bottom: 25px; }
+      .introduce .introduce_carousel .carousel-item .carousel-item_content span {
+        color: #f2f8fc;
+        font-size: 15px;
+        font-weight: normal; }
+      .introduce .introduce_carousel .carousel-item .carousel-item_content .stat {
+        margin-top: 25px; }
+        .introduce .introduce_carousel .carousel-item .carousel-item_content .stat .stat_left_money, .introduce .introduce_carousel .carousel-item .carousel-item_content .stat .stat_right_rating {
+          color: #f2f8fc;
+          font-size: 40px;
+          font-weight: lighter; }
+        .introduce .introduce_carousel .carousel-item .carousel-item_content .stat .stat_left_label, .introduce .introduce_carousel .carousel-item .carousel-item_content .stat .stat_right_label {
+          color: #f2f8fc;
+          font-size: 13px;
+          font-weight: bold; }
+      .introduce .introduce_carousel .carousel-item .carousel-item_content .btn-explore {
+        margin-top: 25px;
+        color: #f2f8fc;
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 30px;
+        border: 2px solid #f2f8fc;
+        background-color: #e42525;
+        padding: 2px 20px;
+        transition: all 0.5s; }
+        .introduce .introduce_carousel .carousel-item .carousel-item_content .btn-explore:hover {
+          background-color: #f2f8fc;
+          color: #e42525; }
+      .introduce .introduce_carousel .carousel-item .carousel-item_content .btn-build {
+        margin-top: 25px;
+        color: #e42525;
+        font-size: 20px;
+        font-weight: 700;
+        background-color: #f2f8fc;
+        border: 2px solid #e42525;
+        border-radius: 30px;
+        padding: 2px 33px;
+        transition: all 0.5s; }
+        .introduce .introduce_carousel .carousel-item .carousel-item_content .btn-build:hover {
+          color: #f2f8fc;
+          background-color: #e42525; }
+
+.tool {
+  margin-top: 50px; }
+  .tool .tool_content {
+    justify-content: space-around; }
+    .tool .tool_content .tool-item {
+      background-color: #fff; }
+      .tool .tool_content .tool-item img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 25px; }
+      .tool .tool_content .tool-item p {
+        color: #007cc0;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 2px; }
+      .tool .tool_content .tool-item span {
+        display: block;
+        color: #007cc0;
+        font-size: 16px;
+        font-weight: lighter;
+        margin-bottom: 35px;
+        padding-left: 20px;
+        padding-right: 20px; }
+      .tool .tool_content .tool-item button {
+        color: #f2f8fc;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #007cc0;
+        border: 2px solid #007cc0;
+        border-radius: 30px;
+        padding: 5px 40px;
+        margin-bottom: 25px; }
+        .tool .tool_content .tool-item button:hover {
+          background-color: transparent;
+          color: #007cc0; }
 
 /*# sourceMappingURL=style.css.map */
