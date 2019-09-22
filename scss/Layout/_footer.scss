@@ -1,0 +1,45 @@
+.footer {
+    margin-top: $mg-4;
+    .footer_search {
+        form {
+            display: flex;
+            .input-group {
+                .input-group-prepend {
+                    .input-group-text {
+                        background-color: #fff;
+                        i {
+                            padding-left: $pd-3;
+                        }
+                    }
+                }
+                input {
+                    height: 100%;
+                    border-right: none;
+                    border-left: none;
+                }
+                .input-group-append {
+                    .input-group-text {
+                        background-color: #fff;
+                        border-left: none;
+                        button {
+                            @include text($color-blue-1, $fs-1, $fw-bold);
+                            border: 2px solid $color-blue-1;
+                            border-radius: 30px;
+                            &:hover {
+                                background-color: $color-blue-1;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            .btn_backToTop {
+                .input-group-text {
+                    background-color: #fff;
+                    border: none;
+                }
+                
+            }
+        }
+    }
+}
