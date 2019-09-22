@@ -8,4 +8,91 @@
         text-align: center;
         @include text($color-blue-4, $fs-1 + 3, $fw-light);
     }
+    .card-group {
+        width: 90%;
+        margin: auto;
+        .card {
+            text-align: center;
+            position: relative;
+            .card-body {
+                position: absolute;
+                top: 50%;
+                .card-title {
+                    margin-top: $mg-2;
+                    @include text($color-blue-4, $fs-3, $fw-bold);
+                }
+                .card-text {
+                    margin-bottom: 0;
+                    @include text($color-blue-4, $fs-1 + 2, $fw-light);
+                }
+                button {
+                    @include text($color-blue-3, $fs-2, $fw-bold);
+                    &:hover {
+                        color: $color-blue-4;
+                    }
+                }
+            }
+            .last {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                
+            }
+        }
+        .card-last {
+            .fa-twitter {
+                @include text($color-blue-3, $fs-4 - 7, $fw-normal);
+            }
+            img {
+                width: 8%;
+                height: 8%;
+                border-radius: 15%;
+            }
+            .title_content {
+                h4 {
+                    @include text($color-blue-3, $fs-1 + 3, $fw-bold-1);
+                    margin-bottom: $mg-0;
+                    a {
+                        text-decoration: none;
+                    }
+                }
+                p {
+                    @include text($color-blue-3, $fs-0, $fw-light);
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+            .main_content {
+                @include text(black, $fs-2, $fw-normal);
+                
+            }
+            .text-muted {
+                a {
+                    text-decoration: none;
+                }
+            }
+            .social {
+                color: $color-blue-3;
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .btn_more {
+        text-align: center;
+        margin-top: $mg-3;
+        button {
+            @include text($color-white-1, $fs-2 - 3, $fw-bold);
+            background-color: $color-red;
+            border-radius: 30px;
+            border: 2px solid $color-red;
+            transition: all 0.5s;
+            &:hover {
+                color: $color-red;
+                background-color: transparent;
+            }
+        }
+    }
 }

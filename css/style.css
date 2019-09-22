@@ -303,5 +303,79 @@ body {
   color: #06456a;
   font-size: 16px;
   font-weight: lighter; }
+.discover .card-group {
+  width: 90%;
+  margin: auto; }
+  .discover .card-group .card {
+    text-align: center;
+    position: relative; }
+    .discover .card-group .card .card-body {
+      position: absolute;
+      top: 50%; }
+      .discover .card-group .card .card-body .card-title {
+        margin-top: 25px;
+        color: #06456a;
+        font-size: 24px;
+        font-weight: bold; }
+      .discover .card-group .card .card-body .card-text {
+        margin-bottom: 0;
+        color: #06456a;
+        font-size: 15px;
+        font-weight: lighter; }
+      .discover .card-group .card .card-body button {
+        color: #2198dc;
+        font-size: 20px;
+        font-weight: bold; }
+        .discover .card-group .card .card-body button:hover {
+          color: #06456a; }
+    .discover .card-group .card .last {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+  .discover .card-group .card-last .fa-twitter {
+    color: #2198dc;
+    font-size: 33px;
+    font-weight: normal; }
+  .discover .card-group .card-last img {
+    width: 8%;
+    height: 8%;
+    border-radius: 15%; }
+  .discover .card-group .card-last .title_content h4 {
+    color: #2198dc;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 2px; }
+    .discover .card-group .card-last .title_content h4 a {
+      text-decoration: none; }
+  .discover .card-group .card-last .title_content p {
+    color: #2198dc;
+    font-size: 15px;
+    font-weight: lighter; }
+    .discover .card-group .card-last .title_content p a {
+      text-decoration: none; }
+  .discover .card-group .card-last .main_content {
+    color: black;
+    font-size: 20px;
+    font-weight: normal; }
+  .discover .card-group .card-last .text-muted a {
+    text-decoration: none; }
+  .discover .card-group .card-last .social {
+    color: #2198dc; }
+    .discover .card-group .card-last .social a {
+      text-decoration: none; }
+.discover .btn_more {
+  text-align: center;
+  margin-top: 35px; }
+  .discover .btn_more button {
+    color: #f2f8fc;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #e42525;
+    border-radius: 30px;
+    border: 2px solid #e42525;
+    transition: all 0.5s; }
+    .discover .btn_more button:hover {
+      color: #e42525;
+      background-color: transparent; }
 
 /*# sourceMappingURL=style.css.map */
