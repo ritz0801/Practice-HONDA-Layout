@@ -357,6 +357,8 @@ body {
     color: black;
     font-size: 20px;
     font-weight: normal; }
+    .discover .card-group .card-last .main_content a {
+      text-decoration: none; }
   .discover .card-group .card-last .text-muted a {
     text-decoration: none; }
   .discover .card-group .card-last .social {
@@ -383,16 +385,21 @@ body {
   .footer .footer_search form {
     display: flex; }
     .footer .footer_search form .input-group .input-group-prepend .input-group-text {
-      background-color: #fff; }
+      background-color: #fff;
+      border: none; }
       .footer .footer_search form .input-group .input-group-prepend .input-group-text i {
-        padding-left: 20px; }
+        padding-left: 20px;
+        font-size: 20px; }
     .footer .footer_search form .input-group input {
       height: 100%;
-      border-right: none;
-      border-left: none; }
+      border: none; }
+      .footer .footer_search form .input-group input::placeholder {
+        font-size: 20px; }
     .footer .footer_search form .input-group .input-group-append .input-group-text {
       background-color: #fff;
-      border-left: none; }
+      border-left: none;
+      border-top: none;
+      border-bottom: none; }
       .footer .footer_search form .input-group .input-group-append .input-group-text button {
         color: #007cc0;
         font-size: 13px;
@@ -405,5 +412,91 @@ body {
     .footer .footer_search form .btn_backToTop .input-group-text {
       background-color: #fff;
       border: none; }
+  .footer .footer_menu {
+    width: 90%;
+    margin-bottom: 35px; }
+    .footer .footer_menu h4 {
+      margin-bottom: 25px;
+      color: #06456a;
+      font-size: 20px;
+      font-weight: bold; }
+    .footer .footer_menu p {
+      color: #06456a;
+      font-size: 15px;
+      font-weight: normal; }
+    .footer .footer_menu .discover p {
+      text-align: left; }
+  .footer .footer_contact {
+    border-top: 2px solid #c4c4c4; }
+    .footer .footer_contact .footer_contact_content {
+      width: 90%;
+      margin: auto; }
+      .footer .footer_contact .footer_contact_content .social {
+        margin: 35px 0; }
+        .footer .footer_contact .footer_contact_content .social p {
+          color: #06456a;
+          font-size: 20px;
+          font-weight: bold; }
+        .footer .footer_contact .footer_contact_content .social i {
+          margin-right: 10px;
+          border: 1px solid transparent;
+          background-color: #2198dc;
+          border-radius: 1999px;
+          color: #f2f8fc;
+          padding: 5px 5px; }
+      .footer .footer_contact .footer_contact_content .news p {
+        color: #00324f;
+        font-size: 14px;
+        font-weight: normal; }
+      .footer .footer_contact .footer_contact_content .news .btn_inform {
+        text-align: right; }
+        .footer .footer_contact .footer_contact_content .news .btn_inform button {
+          color: #0070b0;
+          font-size: 14px;
+          font-weight: 700;
+          border: 2px solid #0070b0;
+          background-color: transparent;
+          border-radius: 30px; }
+          .footer .footer_contact .footer_contact_content .news .btn_inform button i {
+            color: #2198dc;
+            font-size: 13px;
+            font-weight: normal; }
+          .footer .footer_contact .footer_contact_content .news .btn_inform button:hover {
+            background-color: #0070b0;
+            color: #f2f8fc; }
+            .footer .footer_contact .footer_contact_content .news .btn_inform button:hover i {
+              color: #f2f8fc; }
+  .footer .footer_copyright {
+    background-color: #007cc0; }
+    .footer .footer_copyright .footer_copyright_content {
+      width: 90%;
+      margin: auto;
+      padding-top: 45px; }
+      .footer .footer_copyright .footer_copyright_content .left p {
+        color: #f2f8fc;
+        font-size: 15px;
+        font-weight: normal; }
+        .footer .footer_copyright .footer_copyright_content .left p a {
+          text-decoration: underline;
+          color: #f2f8fc; }
+      .footer .footer_copyright .footer_copyright_content .right p {
+        margin-bottom: 2px; }
+        .footer .footer_copyright .footer_copyright_content .right p a {
+          text-decoration: underline;
+          color: #f2f8fc;
+          margin-right: 25px;
+          padding-right: 25px;
+          border-right: 1px solid #f2f8fc; }
+      .footer .footer_copyright .footer_copyright_content .right .bottom {
+        margin-left: 77px; }
+    .footer .footer_copyright .footer_logo {
+      width: 90%;
+      margin: auto;
+      text-align: center;
+      margin-top: 25px;
+      padding-bottom: 20px; }
+      .footer .footer_copyright .footer_logo a svg {
+        width: 60%;
+        fill: #fff; }
 
 /*# sourceMappingURL=style.css.map */

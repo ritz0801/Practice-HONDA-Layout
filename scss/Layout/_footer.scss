@@ -7,20 +7,26 @@
                 .input-group-prepend {
                     .input-group-text {
                         background-color: #fff;
+                        border: none;
                         i {
                             padding-left: $pd-3;
+                            font-size: $fs-2;
                         }
                     }
                 }
                 input {
                     height: 100%;
-                    border-right: none;
-                    border-left: none;
+                    border: none;
+                    &::placeholder {
+                        font-size: $fs-2;
+                    }
                 }
                 .input-group-append {
                     .input-group-text {
                         background-color: #fff;
                         border-left: none;
+                        border-top: none;
+                        border-bottom: none;
                         button {
                             @include text($color-blue-1, $fs-1, $fw-bold);
                             border: 2px solid $color-blue-1;
@@ -39,6 +45,112 @@
                     border: none;
                 }
                 
+            }
+        }
+    }
+    .footer_menu {
+        width: 90%;
+        margin-bottom: $mg-3;
+        h4 {
+            margin-bottom: $mg-2;
+            @include text($color-blue-4, $fs-2, $fw-bold);
+        }
+        p {
+            @include text($color-blue-4, $fs-1 + 2, $fw-normal);
+        }
+        .discover {
+            p {
+                text-align: left;
+            }
+        }
+    }
+    .footer_contact {
+        border-top: 2px solid #c4c4c4;
+        .footer_contact_content {
+            width: 90%;
+            margin: auto;
+            .social {
+                margin: $mg-3 0;
+                p {
+                    @include text($color-blue-4, $fs-2, $fw-bold);
+                }
+                i {
+                    margin-right: $mg-1;
+                    border: 1px solid transparent;
+                    background-color: $color-blue-3;
+                    border-radius: 1999px;
+                    color: $color-white-1;
+                    padding: $pd-0 $pd-0;
+                }
+            }
+            .news {
+                p {
+                    @include text($color-blue-5, $fs-1 + 1, $fw-normal);
+                }
+                .btn_inform {
+                    text-align: right;
+                    button {
+                        @include text($color-blue-2, $fs-1 + 1, $fw-bold-1);
+                        border: 2px solid $color-blue-2;
+                        background-color: transparent;
+                        border-radius: 30px;
+                        i {
+                            @include text($color-blue-3, $fs-1, $fw-normal);
+                        }
+                        &:hover {
+                            background-color: $color-blue-2;
+                            color: $color-white-1;
+                            i {
+                                color: $color-white-1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer_copyright {
+        background-color: $color-blue-1;
+        .footer_copyright_content {
+            width: 90%;
+            margin: auto;
+            padding-top: $pd-4 - 5;
+            .left {
+                p {
+                    @include text($color-white-1, $fs-1 + 2, $fw-normal);
+                    a {
+                        text-decoration: underline;
+                        color: $color-white-1;
+                    }
+                }
+            }
+            .right {
+                p {
+                    margin-bottom: $mg-0;
+                    a {
+                        text-decoration: underline;
+                        color: $color-white-1;
+                        margin-right: $mg-2;
+                        padding-right: $pd-2 + 10;
+                        border-right: 1px solid $color-white-1;
+                    }
+                }
+                .bottom {
+                    margin-left: $mg-4 + 27;
+                }
+            }
+        }
+        .footer_logo {
+            width: 90%;
+            margin: auto;
+            text-align: center;
+            margin-top: $mg-2;
+            padding-bottom: $pd-3;
+            a {
+                svg {
+                    width: 60%;
+                    fill: #fff;
+                }
             }
         }
     }
